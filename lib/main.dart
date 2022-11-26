@@ -29,14 +29,17 @@ class appBar extends StatelessWidget {
         title: const Center(child: Text('Hello World')),
         actions: <Widget>[
           IconButton(
-            onPressed: (){
-              ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Pluse Show')));
+            onPressed: () {
+              ScaffoldMessenger.of(context)
+                  .showSnackBar(const SnackBar(content: Text('Pulse Show')));
             },
             icon: const Icon(Icons.plus_one),
             tooltip: 'Show Test',
           )
         ],
       ),
+      body: const Center(
+          child: Text('This is Home Plage', style: TextStyle(fontSize: 25))),
     );
   }
 }
