@@ -39,7 +39,7 @@ class appBar extends StatelessWidget {
         ],
       ),
       body: const Center(
-          child: Text('This is Home Plage', style: TextStyle(fontSize: 25))),
+          child: Text('Hello Center', style: TextStyle(fontSize: 25))),
     );
   }
 }
