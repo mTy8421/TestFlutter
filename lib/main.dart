@@ -27,6 +27,15 @@ class appBar extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Center(child: Text('Hello World')),
+        actions: <Widget>[
+          IconButton(
+            onPressed: (){
+              ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Pluse Show')));
+            },
+            icon: const Icon(Icons.plus_one),
+            tooltip: 'Show Test',
+          )
+        ],
       ),
     );
   }
